@@ -1,0 +1,109 @@
+.avatar{
+    border: 1px solid gray;
+    float:right;
+    width: 200px;
+    margin:10px;
+    margin-right:20px;
+
+}
+
+.ico{
+    border: 1px solid black;
+    padding:2px;
+    width:30px;
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    margin:20px;
+}
+.footer{
+    display: block;
+    width: 700px;
+    margin-top: 400px;
+    border: 2px solid darkgoldenrod;
+}
+
+.header{
+    display: flex;
+    background-color: #879bbe;
+    border:0.5px solid #f30eff;
+    border-collapse: collapse;
+    justify-content: space-around;
+
+}
+.son{
+    padding: 5px;
+}
+a:visited{
+    color: #000720;
+    text-decoration: none;
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.article{
+    padding: 10px;
+    background-color: #ffe0ed;
+    margin:20px;
+    margin-left: 120px;
+    margin-right:120px;
+}
+.title{
+    margin: 10px;
+    font-size: 20px;
+}
+.box{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.user-jail{
+    background-color: #faffdd;
+    display: flex;
+    flex-direction:row-reverse;
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+    justify-content: flex-start;
+}
+.user-name{
+    font-family: fantasy, "Sitka Banner";
+    font-size: 24px;
+}
+
+.button1, .button2{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-family: fantasy, "Sitka Banner";
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 24px;
+}
+.in, .up{
+    width: 100px;
+    height: 50px;
+
+}
+.in:hover{
+    background-color: whitesmoke;
+    text-decoration-line: underline;
+
+}
+.up:hover{
+    background-color: whitesmoke;
+    text-decoration-line: underline;
+}
+body{
+    font-family: fantasy, "Sitka Banner";
+    background-color: #d2d7db;
+    color: #0f111f;
+}
