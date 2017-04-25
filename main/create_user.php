@@ -47,7 +47,7 @@ $regexpT = '/@/';
 if (!(preg_match($regexpT, $twitter_handle))) {
     $twitter_url = $twitter_url . $twitter_handle;
 } else {
-    $twitter_handle = substr($twitter_handle, 1);
+    $twitter_handle = substr($twitter_handle, 0);
     $twitter_url = $twitter_url . $twitter_handle;
 }
 ($_FILES[$image_fieldname]['error'] == 0)

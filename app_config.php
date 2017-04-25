@@ -31,5 +31,3 @@ function get_web_path($file_system_path)
 }
 
 session_start();
-
-?>

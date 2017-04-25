@@ -7,12 +7,18 @@ if ((!isset($_SESSION['user_id'])) || (!strlen($_SESSION['user_id']) > 0)) {
     exit;
 }
 
+    if(isset($_REQUEST['tag'])){
+        $tag = mysqli_real_escape_string($link, $_REQUEST['tag']);
+        $tag = "'%{$tag}%';" ;
+        $query = "SELECT * FROM articles WHERE tags LIKE".$tag ;
+        $result = mysqli_query($link, $query)
+        or handle_error("Cant take articles", $query."db error");
+    }else {
+        $query = "Select * FROM articles;";
 
-    $query="Select * FROM articles;";
-
-    $result=mysqli_query($link, $query)
-        or handle_error("Cant take articles"  , "db error");
-
+        $result = mysqli_query($link, $query)
+        or handle_error("Cant take articles", "db error");
+    }
 ?>
 
     <head>
@@ -22,6 +28,7 @@ if ((!isset($_SESSION['user_id'])) || (!strlen($_SESSION['user_id']) > 0)) {
     <?php
         require_once ("header.php");
     ?>
+
     <?php
 
     foreach($result as $a):?>

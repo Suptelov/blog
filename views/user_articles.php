@@ -7,15 +7,11 @@ if ((!isset($_SESSION['user_id'])) || (!strlen($_SESSION['user_id']) > 0)) {
 }
 if(isset($_REQUEST['user_id'])) {
     $user_id = $_REQUEST['user_id'];
-    $user_id = $_REQUEST['user_id'];
     $query = sprintf("Select * FROM articles where user_id='%s';",
         mysqli_real_escape_string($link, $user_id));
     $result = mysqli_query($link, $query)
     or handle_error("Cant take user" . $user_id . " articles", "db error");
 
-    if (mysqli_num_rows($result) < 1) {
-        handle_error("Sorry, but you dont have articles", $_COOKIE['user_id'] . " value of COOKIE user_id");
-    }
 
 }
 else{

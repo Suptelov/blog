@@ -33,16 +33,7 @@ $matches = preg_match($regexpVK, $facebook_url);
 if ($matches === 0) {
     $facebook_url = "http://www.vk.com/" . $facebook_url;
 }
-// Требуется достать картинку из таблицы images 
 
-/*$take_image=sprintf("SELECT image_data FROM image where image_id=%d",$pic_id);
-$selected_picture=mysqli_query($link, $take_image);
-if ($selected_picture)
-    {
-        $row=mysqli_fetch_assoc($selected_picture);
-        $image=$row['image_data'];
-    }
-*/
 ?>
 <html>
 
@@ -81,7 +72,7 @@ require_once($root . "/training/views/header.php");
         </li>
         <li>
             <div>
-                <a href=" <?php echo "http://localhost/training/views/user_articles.php?user_id=" . $_SESSION['user_id']; ?> ">
+                <a href=" <?php echo "http://localhost/training/views/user_articles.php?user_id=" . $user_id; ?> ">
                     User's Articles
                 </a>
             </div>

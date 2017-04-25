@@ -22,8 +22,12 @@ li{
     display: block;
     width: 700px;
     margin-top: 400px;
-    border: 2px solid darkgoldenrod;
+    margin-left: 25%;
+    padding: 5px;
+
+
 }
+.footer:hover{border: 2px solid #f30eff;}
 
 .header{
     display: flex;
@@ -47,7 +51,7 @@ a:visited{
 }
 .article{
     padding: 10px;
-    background-color: #ffe0ed;
+    background-color: #a9b3ce;
     margin:20px;
     margin-left: 120px;
     margin-right:120px;
@@ -63,7 +67,7 @@ a:visited{
     justify-content: space-around;
 }
 .user-jail{
-    background-color: #faffdd;
+    background-color: #ebe2ff;
     display: flex;
     flex-direction:row-reverse;
     width: 400px;
@@ -87,6 +91,7 @@ a:visited{
     margin-left: 30%;
     margin-right: 30%;
     font-size: 24px;
+    margin-top: 40px;
 }
 .in, .up{
     width: 100px;
@@ -103,7 +108,35 @@ a:visited{
     text-decoration-line: underline;
 }
 body{
-    font-family: fantasy, "Sitka Banner";
+    font-family: "Courier New", Courier, monospace;
     background-color: #d2d7db;
     color: #0f111f;
+}
+.tags, .tag {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    padding-right: 4px;
+}
+.date{
+    font-size: 10px;
+    font-style: italic;
+    color: #35353a;
+    padding: 2px;
+}
+.article_title{
+    margin: 0px;
+}
+.content{
+    margin: 15px;
+    padding: 20px;
+    margin-right: 150px;
+
+}
+.content:hover{background-color:#859daf;}
+.main{
+    margin: 20px;
+    border:2px solid grey;
+    padding: 10px;
+
 }
